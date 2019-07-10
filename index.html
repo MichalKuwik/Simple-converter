@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +8,47 @@
   <title>Js Converter</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-  
+
   <div class="container">
-    <header>
-      <h1>Lenght Converter</h1>
+    <header class="container__header">
+      <h1 class="container__title">Lenght Converter</h1>
     </header>
-    <main>
+    <main class="converter__main">
       <section class="converter">
+
         <input type="text" placeholder="Type value..." class="converter__input">
-        <h4>Select unit</h4>
+
         
+
         <div class="converter__select">
 
-          <label for="pet-select">Choose a pet:</label>
+          <label for="pet-select"></label>
 
-            <select class="converter__select-options">
-                <option value="">--Please choose an option--</option>
-                <option value="Metres">Metres</option>
-                <option value="Kilometres">Kilometres</option>
-                <option value="Sea-miles">Sea-miles</option>
-                <option value="Yards">Yards</option>
-                
-            </select>
+          <!-- <select class="converter__select-options">
+            <option value="">--Please choose an option--</option>
+            <option value="Metres">Metres</option>
+            <option value="Kilometres">Kilometres</option>
+            <option value="Sea-miles">Sea-miles</option>
+            <option value="Yards">Yards</option>
+          </select> -->
         </div>
       </section>
+
+      <section class="display">
+        <div class="display__container">
+          <div class="display__box display__m">Meters:</div>
+          <div class="display__box display__km">Kilometers:</div>
+          <div class="display__box display__mil">Sea-miles:</div>
+          <div class="display__box display__y">Yards:</div>
+        </div>
+      </section>
+
     </main>
   </div>
 
   <script src="js/code.js"></script>
 </body>
+
 </html>
