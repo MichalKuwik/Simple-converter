@@ -1,18 +1,24 @@
 //Get dom elements
 const input = document.querySelector('.converter__input');
+//Get DOM elements for outputs
+const outputM = document.querySelector('.outputM');
+const outputKm = document.querySelector('.outputKm');
+const outputMil = document.querySelector('.outputMil');
+const outputY = document.querySelector('.outputY');
 
-const outputM = document.querySelector('.display__m');
-const outputKm = document.querySelector('.display__km');
-const outputMil = document.querySelector('.display__mil');
-const outputY = document.querySelector('.display__y');
+//tommorow
+//const outputDiv = document.querySelector('.converter__container');
+//outputDiv.style.display = "none";
 
-input.addEventListener('input',function(e){
+input.addEventListener('input',(e) => {
   let lbs = e.target.value;
   
   outputM.innerHTML = lbs * 1 + " meters";
   outputKm.innerHTML = lbs / 1000 + " kilometer(s)";
-  outputMil.innerHTML = Math.floor(lbs/1600) + " mile(s)";
+  outputMil.innerHTML = lbs / 1600 + " mile(s)";
   outputY.innerHTML = lbs * 1.0936133 + "yard(s)";
 
-})
+  //tommorow
+  // outputDiv.style.display = "block";
+});
 
