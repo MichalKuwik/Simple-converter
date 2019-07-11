@@ -15,7 +15,7 @@ body{
   background: #000;
 }
 .container{
-  width:70vw;
+  width:50vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,7 +126,7 @@ h4{
 
 /* end styles for div.converter__container */
 
-@media screen and (max-width:400px){
+@media screen and (max-width:767px){
   .container__title{
     font-weight: 300;
     color:#fff;

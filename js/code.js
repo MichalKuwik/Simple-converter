@@ -21,6 +21,8 @@ input.addEventListener('input',(e) => {
   
   outputDiv.style.display = "block";
 });
+
+//clear-btn
 const btn_clear = document.querySelector('.converter__btn').addEventListener('click', () => {
   input.value = '';
   outputDiv.style.display = 'none';
