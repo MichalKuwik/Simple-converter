@@ -6,9 +6,9 @@ const outputKm = document.querySelector('.outputKm');
 const outputMil = document.querySelector('.outputMil');
 const outputY = document.querySelector('.outputY');
 
-//tommorow
-//const outputDiv = document.querySelector('.converter__container');
-//outputDiv.style.display = "none";
+
+const outputDiv = document.querySelector('.converter__container');
+outputDiv.style.display = "none";
 
 input.addEventListener('input',(e) => {
   let lbs = e.target.value;
@@ -18,7 +18,10 @@ input.addEventListener('input',(e) => {
   outputMil.innerHTML = lbs / 1600 + " mile(s)";
   outputY.innerHTML = lbs * 1.0936133 + "yard(s)";
 
-  //tommorow
-  // outputDiv.style.display = "block";
+  
+  outputDiv.style.display = "block";
 });
-
+const btn_clear = document.querySelector('.converter__btn').addEventListener('click', () => {
+  input.value = '';
+  outputDiv.style.display = 'none';
+})
