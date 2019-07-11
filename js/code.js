@@ -16,12 +16,12 @@ input.addEventListener('input',(e) => {
   
   outputM.innerHTML = lbs * 1 + " meters";
   outputKm.innerHTML = lbs / 1000 + " kilometer(s)";
-  outputMil.innerHTML = lbs / 1600 + " mile(s)";
+  outputMil.innerHTML = (lbs / 1600).toFixed(3) + " mile(s)";
 
   //yards
   let yeardsScore = lbs * 1.0931;
   yeardsScore.toFixed(3);
-  outputY.innerHTML = yeardsScore + " yard(s)";
+  outputY.innerHTML = yeardsScore.toFixed(3) + " yard(s)";
 
   
   outputDiv.style.display = "block";
