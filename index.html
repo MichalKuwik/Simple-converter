@@ -16,11 +16,25 @@
       <h1 class="container__title">Lenght Converter</h1>
     </header>
     <main class="converter__main">
+
       <section class="converter">
+        <label class="converter__label" for="unit">Select unit</label>
+        <div class="converter__value">
+          <input type="number" placeholder="Enter a number..." class="converter__input">
 
-        <input type="number" placeholder="Enter a number..." class="converter__input">
+          <select name="unit" id="unit" class="converter__select">
+            <option  value="" selected>Select unit</option>
+            <option class="converter__options" value="meters">meters</option>
+            <option class="converter__options" value="kilometers">kilometers</option>
+            <option class="converter__options" value="miles">miles</option>
+            <option class="converter__options" value="yards">yards</option>
+          </select>
 
-        
+
+
+        </div>
+
+
         <button class="converter__btn">Clear</button>
 
         <div class="converter__container">

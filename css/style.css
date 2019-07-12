@@ -45,12 +45,31 @@ body{
   align-items: center;
   width:100%;
 }
+.converter__select{
+  width: 10vw;
+  text-align: center;
+  text-align: center;
+  border: 3px solid rgb(191, 58, 115);
+  border-radius: 3px;
+}
+
+.converter__label{
+  position: relative;
+  color: white;
+  left: 13rem;
+  padding-bottom: .5rem;
+}
+/* container for input and select*/
+.converter__value{
+  display: flex;
+}
 /* input */
 .converter__input{
   width:100%;
   border-radius: 5px;
   font-size:2rem;
-  border:none;
+  border: none;
+  border-right: none;
   transition: 0.4s linear;
   box-sizing:unset;
 }
