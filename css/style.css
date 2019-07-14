@@ -56,7 +56,7 @@ body{
 .converter__label{
   position: relative;
   color: white;
-  left: 13rem;
+  left: 40%;;
   padding-bottom: .5rem;
 }
 /* container for input and select*/
@@ -160,5 +160,17 @@ h4{
   .container{
     width:90%;
   }
+
+  .converter__input{
+    width: 70%;
+  }
+  .converter__label{
+    left: 34%;
+  }
+  .converter__select{
+    width: 26vw;
+  }
+
 }
+
 /* media quries for small devices */
